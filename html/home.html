@@ -12,12 +12,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <!-- phone mockup -->
     <main class="flex justify-center items-center">
+
+
+      <!-- phone mockup start-->
       <div class="mockup-phone border-16 border-info bg-white">
         <div class="mockup-phone-camera bg-sky-400"></div>
         <div class="mockup-phone-display">
-          <!-- stat -->
+
+
+          <!-- stat component start -->
           <div
             class="stats bg-green-500 shadow mt-15 mb-5 text-center flex justify-center"
           >
@@ -26,34 +30,84 @@
               <div id="account-balance" class="stat-value">9400</div>
             </div>
           </div>
+          <!-- stat component end -->
+
 
           <div class="divider"></div>
 
-          <!-- button features -->
 
+          <!-- button features start -->
           <button class="btn btn-primary mr-45">Add Money</button>
           <button class="btn btn-secondary mb-5">Cash Out</button>
+          <!-- button features end -->
+
 
           <div class="divider"></div>
 
-          <!-- login info -->
-          <div class="card bg-base-400 w-full max-w-sm shrink-0">
+
+          <!--add money login start -->
+          <div class="hidden card bg-base-400 w-full max-w-sm shrink-0">
             <div class="card-body">
               <fieldset class="fieldset">
                 <label class="label">Add Money Amount</label>
-                <input id="input-add-money" type="text" class="input" placeholder="Amount" />
+                <input
+                  id="input-add-money"
+                  type="text"
+                  class="input"
+                  placeholder="Amount"
+                />
                 <label class="label">Pin Number</label>
-                <input id="input-pin-number" type="password" class="input" placeholder="Pin" />
-                <button id="btn-add-money" class="btn btn-primary mt-4">Add Money</button>
+                <input
+                  id="input-pin-number"
+                  type="password"
+                  class="input"
+                  placeholder="Pin"
+                />
+                <button id="btn-add-money" class="btn btn-primary mt-4">
+                  Add Money
+                </button>
               </fieldset>
             </div>
           </div>
+          <!-- add money login end -->
+
+
+
+          <!-- cash out login start -->
+          <div class="card bg-base-400 w-full max-w-sm shrink-0">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label">Cash Out Amount</label>
+                <input
+                  id="input-cash-out"
+                  type="text"
+                  class="input"
+                  placeholder="Amount"
+                />
+                <label class="label">Pin Number</label>
+                <input
+                  id="input-pin"
+                  type="password"
+                  class="input"
+                  placeholder="Pin"
+                />
+                <button id="btn-cash-out" class="btn btn-secondary mt-4">
+                  Cash Out
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- cash out login end -->
+
+
         </div>
       </div>
+      <!-- phone mockup end -->
     </main>
 
     <!-- js file linked -->
     <script src="../js/utilitites.js"></script>
     <script src="../js/addMoney.js"></script>
+    <script src="../js/cashOut.js"></script>
   </body>
 </html>
