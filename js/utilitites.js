@@ -11,9 +11,21 @@ function getInputFieldValueById(id) {
 }
 
 // text field function
-function getTextFieldValueById(id){
+function getTextFieldValueById(id) {
   const textFieldValue = document.getElementById(id).innerText;
   const textFieldValueNumber = parseFloat(textFieldValue);
   console.log(textFieldValueNumber);
   return textFieldValueNumber;
+}
+
+// show section function
+function showSectionById(id) {
+  // hide all the section by default
+  document.getElementById("add-money-section").classList.add("hidden");
+  document.getElementById("cash-out-section").classList.add("hidden");
+  document
+    .getElementById("transaction-history-section")
+    .classList.add("hidden");
+  // show a specific section when we calling it via id
+  document.getElementById(id).classList.remove("hidden");
 }

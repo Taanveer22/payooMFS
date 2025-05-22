@@ -13,14 +13,10 @@
   </head>
   <body>
     <main class="flex justify-center items-center">
-
-
       <!-- phone mockup start-->
       <div class="mockup-phone border-16 border-info bg-white">
         <div class="mockup-phone-camera bg-sky-400"></div>
         <div class="mockup-phone-display">
-
-
           <!-- stat component start -->
           <div
             class="stats bg-green-500 shadow mt-15 mb-5 text-center flex justify-center"
@@ -32,21 +28,24 @@
           </div>
           <!-- stat component end -->
 
-
           <div class="divider"></div>
-
 
           <!-- button features start -->
-          <button class="btn btn-primary mr-45">Add Money</button>
-          <button class="btn btn-secondary mb-5">Cash Out</button>
-          <!-- button features end -->
 
+          <div class="flex justify-center items-center gap-5">
+            <button id="show-add-money-btn" class="btn btn-primary">Add Money</button>
+            <button id="show-cash-out-btn" class="btn btn-secondary">Cash Out</button>
+            <button id="show-transaction-btn" class="btn btn-accent">Transaction</button>
+          </div>
+          <!-- button features end -->
 
           <div class="divider"></div>
 
-
-          <!--add money login start -->
-          <div class="hidden card bg-base-400 w-full max-w-sm shrink-0">
+          <!--add money section start -->
+          <div
+            id="add-money-section"
+            class="card bg-base-400 w-full max-w-sm shrink-0"
+          >
             <div class="card-body">
               <fieldset class="fieldset">
                 <label class="label">Add Money Amount</label>
@@ -69,12 +68,13 @@
               </fieldset>
             </div>
           </div>
-          <!-- add money login end -->
+          <!-- add money section end -->
 
-
-
-          <!-- cash out login start -->
-          <div class="card bg-base-400 w-full max-w-sm shrink-0">
+          <!-- cash out section start -->
+          <div
+            id="cash-out-section"
+            class="hidden card bg-base-400 w-full max-w-sm shrink-0"
+          >
             <div class="card-body">
               <fieldset class="fieldset">
                 <label class="label">Cash Out Amount</label>
@@ -97,9 +97,13 @@
               </fieldset>
             </div>
           </div>
-          <!-- cash out login end -->
+          <!-- cash out section end -->
 
-
+          <!-- transaction history section start -->
+          <div id="transaction-history-section" class="hidden">
+            <h2 class="text-3xl text-red-500 font-bold">transaction history</h2>
+          </div>
+          <!-- transaction history section end -->
         </div>
       </div>
       <!-- phone mockup end -->
@@ -109,5 +113,6 @@
     <script src="../js/utilitites.js"></script>
     <script src="../js/addMoney.js"></script>
     <script src="../js/cashOut.js"></script>
+    <script src="../js/feature.js"></script>
   </body>
 </html>

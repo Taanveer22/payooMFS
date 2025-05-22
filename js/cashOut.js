@@ -18,5 +18,7 @@ document
       console.log(accountBalance);
       const newBalance = accountBalance - inputCashOut;
       document.getElementById('account-balance').innerText = newBalance;
+    } else{
+      alert('wrong input...please try later...')
     }
   });

@@ -18,6 +18,6 @@ document
       const newBalance = accountBalance + inputAddMoney;
       document.getElementById("account-balance").innerText = newBalance;
     } else {
-      alert("failed to add money");
+      alert("failed to add money...");
     }
   });
