@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homepage</title>
+    <title>title</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -33,9 +33,15 @@
           <!-- button features start -->
 
           <div class="flex justify-center items-center gap-5">
-            <button id="show-add-money-btn" class="btn btn-primary">Add Money</button>
-            <button id="show-cash-out-btn" class="btn btn-secondary">Cash Out</button>
-            <button id="show-transaction-btn" class="btn btn-accent">Transaction</button>
+            <button id="show-add-money-btn" class="btn btn-primary">
+              Add money
+            </button>
+            <button id="show-cash-out-btn" class="btn btn-secondary">
+              Cash Out
+            </button>
+            <button id="show-transaction-btn" class="btn btn-accent">
+              Transaction
+            </button>
           </div>
           <!-- button features end -->
 
@@ -48,7 +54,7 @@
           >
             <div class="card-body">
               <fieldset class="fieldset">
-                <label class="label">Add Money Amount</label>
+                <label class="label"> Money Amount</label>
                 <input
                   id="input-add-money"
                   type="text"
@@ -101,7 +107,10 @@
 
           <!-- transaction history section start -->
           <div id="transaction-history-section" class="hidden">
-            <h2 class="text-3xl text-red-500 font-bold">transaction history</h2>
+            <h2 class="text-3xl text-yel-500 font-bold mb-5 text-center">
+              transaction history
+            </h2>
+            <div id="transaction-container" class="space-y-2"></div>
           </div>
           <!-- transaction history section end -->
         </div>
