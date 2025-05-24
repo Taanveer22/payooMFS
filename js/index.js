@@ -10,6 +10,7 @@ document
 
     const pinValue = document.getElementById("input-pin-check").value;
     console.log(pinValue);
+    
 
     if (mobileValue === "01761248294" && pinValue === "1234") {
       console.log("congrats! you have logged in");
